@@ -1,0 +1,47 @@
+.body{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.body h1 {
+    text-align: center;
+}
+.cadastro{
+    width: 1050px;
+    margin: 30px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+.cadastro input{ 
+    margin-left: 10px;
+    margin-bottom: 40px;
+    height: 30px;
+}
+.cadastro select {
+    width: 200px;
+    height: 30px; 
+    margin-left: 10px;
+    font-size: 20px;
+} 
+input:placeholder-shown{
+    font-size:20px;
+    
+}
+.btn{
+    display: block;
+    height: 50px;
+    width: 100px;
+    margin: 0 auto;
+}
+.name{
+    min-width: 60%;
+}
+.idade{
+    width: 100px;
+}
+.rua{
+    min-width: 60%;
+}
+#numero{
+    width: 100px;
+}

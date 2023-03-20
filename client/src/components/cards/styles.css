@@ -1,0 +1,35 @@
+.card__container{
+    max-width: 80vw;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+}
+.card__container:hover{
+    cursor: pointer;
+    background-color: rgba(85, 82, 82, 0.2);
+}
+.card__container p {
+    padding: 4px;
+    border: 2px solid black;
+}
+.card__name{
+    min-width: 35%;
+    overflow-wrap: break-word;
+}
+.card__cpf{
+    overflow-wrap: break-word;
+    min-width: 15%;
+}
+.card__rua{
+    min-width: 25%;
+    overflow-wrap: break-word;
+}
+.card__numero{
+    overflow-wrap: break-word;
+    min-width: 8%;
+}
+.card__bairro{
+    overflow-wrap: break-word;
+    min-width: 17%;
+}
