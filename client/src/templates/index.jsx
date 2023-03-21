@@ -51,7 +51,7 @@ export const Home = () =>{
   return(
   <div className='body'>
   
-    <h1>cadastro paciente</h1>
+    <h1>cadastro cliente</h1>
       <div className='cadastro'>
         <input onChange={handleChange} className='name' name='name' type="text" placeholder='Nome Completo' />
         <input onChange={handleChange} className='idade' name='idade' type="number" placeholder='idade' />
