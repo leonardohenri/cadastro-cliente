@@ -23,6 +23,24 @@ app.get("/getCards", (req,res)=>{
     })
 })
 
+app.get("/getEstados", (req,res)=>{
+    let SQL = "SELECT * FROM heroku_097b4127bff040d.estado"
+    db.query(SQL,function(err,response){
+        if(err) console.log(err);
+        if(response)res.send(response)
+    })
+})
+
+app.get("/getCidades/:estado",(req,res)=>{
+    const {estado} = req.params;
+    console.log("index", estado)
+    let SQL = "SELECT * FROM heroku_097b4127bff040d.cidade WHERE uf = ?"
+    db.query(SQL,[estado],(err,response)=>{
+        if(err)console.log(err)
+        if(response)res.send(response)
+    })
+})
+
 app.post("/register", (req,res)=>{
     const {name} = req.body;
     const {idade} = req.body;

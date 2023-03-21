@@ -8,7 +8,6 @@ export const Cards = (obj) =>{
     const handleClick=()=>{
         setOpen(true)
     };
-    console.log(obj.id, obj.cidade, obj.trabalho) 
     return (
         <>
         <FormDialog open = {open} setOpen = {setOpen} id={obj.id} rua={obj.rua} bairro={obj.bairro} numero={obj.numero} name={obj.name} cpf={obj.cpf} rg={obj.rg}

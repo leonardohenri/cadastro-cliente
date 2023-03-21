@@ -22,7 +22,7 @@ export default function FormDialog(props) {
     numero:props.numero,
     cidade:props.cidade,
   });
-console.log("idade", editvalues.idade);
+
   const handlesalvar = () =>{
     Axios.put("http://localhost:3001/edit",{
     id:editvalues.id,
@@ -38,11 +38,12 @@ console.log("idade", editvalues.idade);
     cidade:editvalues.cidade,
   });
   handleClose();
-  
+  document.location.reload();
   };
   const handleDelete = () =>{
     Axios.delete(`http://localhost:3001/delete/${editvalues.id}`);
     handleClose();
+    document.location.reload();
   }
 
 
