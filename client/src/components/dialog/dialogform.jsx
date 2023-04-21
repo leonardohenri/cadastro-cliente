@@ -38,13 +38,17 @@ export default function FormDialog(props) {
     numero:editvalues.numero,
     cidade:editvalues.cidade,
   });
-  handleClose();
-  document.location.reload();
+ setTimeout(() => {
+            handleClose();
+            document.location.reload();
+        }, 500); 
   };
   const handleDelete = () =>{
-    Axios.delete(`${url}delete/${editvalues.id}`);
-    handleClose();
-    document.location.reload();
+    Axios.delete(`${url}delete/${editvalues.id}`)
+       setTimeout(() => {
+            handleClose();
+            document.location.reload();
+        }, 500); 
   }
 
 
