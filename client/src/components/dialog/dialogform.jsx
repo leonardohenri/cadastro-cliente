@@ -22,9 +22,10 @@ export default function FormDialog(props) {
     numero:props.numero,
     cidade:props.cidade,
   });
+  const url = 'https://servidor-express.onrender.com/'
 
   const handlesalvar = () =>{
-    Axios.put("http://localhost:3001/edit",{
+    Axios.put(`${url}edit`,{
     id:editvalues.id,
     name:editvalues.name,
     idade:editvalues.idade,
@@ -41,7 +42,7 @@ export default function FormDialog(props) {
   document.location.reload();
   };
   const handleDelete = () =>{
-    Axios.delete(`http://localhost:3001/delete/${editvalues.id}`);
+    Axios.delete(`${url}delete/${editvalues.id}`);
     handleClose();
     document.location.reload();
   }
