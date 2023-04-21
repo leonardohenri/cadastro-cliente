@@ -33,7 +33,7 @@ export const Home = () =>{
     cidade:values.cidade
 
   }).then((res)=>{console.log(res)})
-  setTimeout(()=>{axios.get(`${url}getCards`).then((res)=>(setCard(res.data)))},[5000])
+  setTimeout(()=>{axios.get(`${url}getCards`).then((res)=>(setCard(res.data)))},[500])
   }
   const getCidades = (value) =>{
     console.log(value)
